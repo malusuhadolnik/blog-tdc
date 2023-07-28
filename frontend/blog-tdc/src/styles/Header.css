@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
+
+.header-links {
+  background-color: rgb(177, 190, 99);
+  display: flex;
+  font-family: 'Averia Serif Libre', Cambria, serif;
+  height: 5%;
+  justify-content: space-around;
+  left: 0;
+  padding-top: 0.7%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

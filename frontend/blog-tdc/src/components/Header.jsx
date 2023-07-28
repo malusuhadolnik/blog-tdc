@@ -1,21 +1,24 @@
 import { Link } from 'react-router-dom';
+import './../styles/Header.css'
 
 function Header() {
     return (
       <div className='header-home'>
-        <div>
-          <Link
-          to="/"
-          >
-            Página Inicial
-          </Link>  
-        </div>
-        <div>
-          <Link
-          to="/login"
-          >
-            Área do Admin
-          </Link>  
+        <div className='header-links'>
+          <div>
+            <Link
+            to="/"
+            >
+              Página Inicial
+           </Link>  
+          </div>
+          <div>
+            <Link
+            to="/login"
+            >
+              Área do Admin
+            </Link>  
+          </div>
         </div>
         {/* <img
           className="banner"
