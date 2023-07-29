@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import banner from '../images/banner-header.jpg'
 import './../styles/Header.css'
 
 function Header() {
@@ -20,11 +21,11 @@ function Header() {
             </Link>  
           </div>
         </div>
-        {/* <img
+        <img
           className="banner"
-          src={ urlImage }
+          src={ banner }
           alt="banner blog do atelie teoria das cores"
-        /> */}
+        />
       </div>
     );
 }
