@@ -15,6 +15,7 @@ function App() {
         {/* <Route path="/create" element={<Create />}/> */}
         {/* <Route path="/organizacao-pessoal" element={<Organization />}/> */}
         {/* <Route path="/criatividade" element={<Creativity />}/> */}
+        {/* <Route path="/papelaria" element={<Stationary />}/> */}
         {/* <Route path="/posts/:id" component={ PostDetails } /> */}
       </Routes>
     </div>
