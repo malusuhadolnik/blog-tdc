@@ -1,20 +1,23 @@
 .about-container {
-  border-color: black;
-    display: flex;
-    font-family: 'Averia Serif Libre', Cambria, serif;
+  align-items: center;
+  background-color: lavender;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Averia Serif Libre', Cambria, serif;
+  padding: 2%;
+  width: 15%;
+  margin: 2%
 }
 
 .photo-container img {
   height:15%;
-  border-radius: 10%;
-  /* overflow: hidden; */
 }
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .about-container {
-    border-color: black;
-    display: flex;
-    font-family: 'Averia Serif Libre', Cambria, serif;
-  }
+.external-links img {
+  width: 30%;
+}
+
+.external-links a {
+  text-decoration: none;
 }

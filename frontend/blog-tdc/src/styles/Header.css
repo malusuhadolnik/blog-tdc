@@ -9,7 +9,7 @@
   justify-content: space-around;
   left: 0;
   padding-top: 2%;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
 }
@@ -27,15 +27,13 @@ img {
   /* For desktop: */
 
   .header-links {
-    /* background-color: rgb(177, 190, 99); */
     display: flex;
     font-family: 'Averia Serif Libre', Cambria, serif;
-    /* font-size: large; */
     height: 5%;
     justify-content: space-around;
     left: 0;
     padding-top: 0.7%;
-    position: fixed;
+    /* position: fixed; */
     text-decoration: none;
     top: 0;
     width: 100%;
