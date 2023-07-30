@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
 
 .navbar {
-  background-color: rgb(177, 190, 99);
+  background-color: rgb(194, 206, 130);
   display: flex;
   font-family: 'Averia Serif Libre', Cambria, serif;
   height: 3%;
   justify-content: space-around;
   left: 0;
-  padding-top: 2%;
-  position: fixed;
-  top: 18%;
+  padding: 1%;
+  /* position: fixed; */
+  top: 16%;
   width: 100%;
 }
 
 .navbar a {
-  color: black;
+  color: rgb(37, 17, 13);
   font-size: small;
   text-decoration: none;
 }
@@ -30,15 +30,16 @@
     height: 5%;
     justify-content: space-around;
     left: 0;
-    padding-top: 1%;
-    position: fixed;
+    padding: 1%;
+    /* position: fixed; */
     text-decoration: none;
-    top: 33%;
+    top: 30%;
     width: 100%;
   }
 
   .navbar a {
-    color: black;
+    color: rgb(37, 17, 13);
+    font-weight: bold;
     font-size: large;
     text-decoration: none;
   }

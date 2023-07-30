@@ -1,0 +1,20 @@
+.about-container {
+  border-color: black;
+    display: flex;
+    font-family: 'Averia Serif Libre', Cambria, serif;
+}
+
+.photo-container img {
+  height:15%;
+  border-radius: 10%;
+  /* overflow: hidden; */
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .about-container {
+    border-color: black;
+    display: flex;
+    font-family: 'Averia Serif Libre', Cambria, serif;
+  }
+}
