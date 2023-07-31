@@ -1,15 +1,16 @@
-import React, { useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import AppContext from './AppContext';
 
 function AppProvider({ children }) {
-  const [dbPosts, setdbPosts] = useState([])
+  const [dbPosts, setdbPosts] = useState([]);
   
   const values = useMemo(() => ({
     dbPosts,
-    setdbPosts,
+    setdbPosts
   }), [
-    dbPosts
+    dbPosts,
+    setdbPosts,
   ]);
 
   return (
@@ -23,4 +24,4 @@ AppProvider.propTypes = ({
     children: PropTypes.node,
   }).isRequired;
   
-  export default AppProvider;
+export default AppProvider;

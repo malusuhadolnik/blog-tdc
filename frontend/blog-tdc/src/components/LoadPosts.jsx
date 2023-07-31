@@ -1,6 +1,6 @@
-import { useContext, useEffect, useState } from 'react';
-import AppContext from '../context/AppContext'; // a ser criado
-// import { requestAllData } from '../services/requests'; // a ser criado
+import { useEffect, useState, useContext } from 'react';
+import AppContext from '../context/AppContext';
+// // import { requestAllData } from '../services/requests'; // a ser criado
 import Card from './Card';
 import mockPosts from '../mocks/mockPosts';
 
@@ -11,6 +11,7 @@ function LoadPosts() {
 // Para usar quando o back-end estiver pronto
 //   const postsList = async () => {
 //     try {
+  // IMPORTANTE: CRIAR LÒGICA PARA LIMITAR O NÙMERO DE POSTS RECUPERADOS LÀ NO BACKEND
 //       const data = await requestAllData('/posts'); // endpoint para o fetch dos posts no db, a ser criado
 //       setdbPosts(data);
 //       setIsLoading(false);
@@ -20,15 +21,18 @@ function LoadPosts() {
 //     }
 //   };
 
-// Para o teste com os post mockados:
-  const postsList = () => {
-    setdbPosts(mockPosts)
-    setIsLoading(false);
-  }
-
+  // useEffect(() => {
+  //   if (isLoading === true) postsList();
+  // }, []);
+  
+// Teste com dados mockados!
   useEffect(() => {
-    if (isLoading === true) postsList();
-  }, []);
+    if (isLoading === true) {
+      setdbPosts(mockPosts);
+      setIsLoading(false);
+    }
+  }, [])
+
 
   return (
     <div className="container-products">

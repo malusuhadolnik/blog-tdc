@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
+import LoadPosts from "../components/LoadPosts";
 
 function Home() {
     return (
@@ -8,6 +9,7 @@ function Home() {
         <Header />
         <Navbar />
         <About />
+        <LoadPosts />
       </main>
     );
 }
