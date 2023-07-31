@@ -1,8 +1,8 @@
-import picture from '../images/malu-avatar.jpeg'
-import instagram from '../images/icons8-bubbles-instagram-100.png'
-import spotify from '../images/icons8-bubbles-spotify-100.png'
-import pinterest from '../images/icons8-bubbles-pinterest-100.png'
-import '../styles/About.css'
+import picture from '../images/malu-avatar-3.jpeg';
+import instagram from '../images/icons8-instagram-100-bubbles.png';
+import spotify from '../images/icons8-spotify-logo-bubbles.png';
+import pinterest from '../images/icons8-bubbles-pinterest-100.png';
+import '../styles/About.css';
 
 function About() {
     return (

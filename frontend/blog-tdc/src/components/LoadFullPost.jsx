@@ -2,12 +2,17 @@ import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 // import AppContext from '../context/AppContext';
 import mockPosts from '../mocks/mockPosts';
+import '../styles/LoadFullPost.css';
 
 function LoadFullPost() {
 //   const { postDetails, setPostDetails } = useContext(AppContext);
   const [postDetails, setPostDetails] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
+
+  // Para quando o back-end estiver completo:
+  // Fazer o fetch com a id em questão para o endpoint que recupera post por id no banco de dados
+  // Guardar o resultado do fetch em postDetails
 
   // Teste com dados mockados!
   useEffect(() => {
