@@ -1,6 +1,7 @@
 // import React from 'react';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import PostDetails from './pages/PostDetails';
 function App() {
 
   return (
@@ -16,7 +17,7 @@ function App() {
         {/* <Route path="/organizacao-pessoal" element={<Organization />}/> */}
         {/* <Route path="/criatividade" element={<Creativity />}/> */}
         {/* <Route path="/papelaria" element={<Stationary />}/> */}
-        {/* <Route path="/posts/:id" component={ PostDetails } /> */}
+        <Route path="/posts/:id" element={ <PostDetails/> } />
       </Routes>
     </div>
     </Router>
