@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
+
+.navbar {
+  background-color: rgb(194, 206, 130);
+  display: flex;
+  font-family: 'Averia Serif Libre', Cambria, serif;
+  height: 3%;
+  justify-content: space-around;
+  left: 0;
+  padding: 1%;
+  /* position: fixed; */
+  top: 16%;
+  width: 100%;
+}
+
+.navbar a {
+  color: rgb(37, 17, 13);
+  font-size: small;
+  text-decoration: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+
+  .navbar {
+    background-color: rgb(177, 190, 99);
+    display: flex;
+    font-family: 'Averia Serif Libre', Cambria, serif;
+    height: 5%;
+    justify-content: space-around;
+    left: 0;
+    padding: 1%;
+    /* position: fixed; */
+    text-decoration: none;
+    top: 30%;
+    width: 100%;
+  }
+
+  .navbar a {
+    color: rgb(37, 17, 13);
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+  }
+}

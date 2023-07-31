@@ -1,0 +1,23 @@
+.about-container {
+  align-items: center;
+  background-color: rgb(237, 221, 238);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Averia Serif Libre', Cambria, serif;
+  padding: 2%;
+  width: 15%;
+  margin: 2%
+}
+
+.photo-container img {
+  height:15%;
+}
+
+.external-links img {
+  width: 30%;
+}
+
+.external-links a {
+  text-decoration: none;
+}
