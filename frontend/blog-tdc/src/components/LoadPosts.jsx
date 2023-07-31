@@ -43,7 +43,7 @@ function LoadPosts() {
             {dbPosts.length > 0 && dbPosts.map((post) => (<Card
               key={ post.id }
               title={ post.title }
-              mainCategory={ post.category }
+              mainCategory={ post.mainCategory }
               summary={ post.summary }
               mainImage={ post.mainImage }
               id={ post.id }

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import '../styles/Card.css'
 
 function Card(props) {
   const {
@@ -17,9 +18,9 @@ function Card(props) {
         alt={ title }
       />
       <h3>{ title }</h3>
-      <h4>{ mainCategory }</h4>
+      <p className='category-tag'>{ mainCategory }</p>
       <p>{ summary }</p>
-      <div>
+      <div className='read-more-container'>
             <Link
             to={ `/posts/${id}` }
             >

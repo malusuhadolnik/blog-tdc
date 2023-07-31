@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
+
+.post-card {
+  background-color: rgb(237, 240, 212);
+  border-color: black;
+  border-radius: 10px;
+  border-width: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Averia Serif Libre', Cambria, serif;
+  margin: 2%;
+  padding: 2%;
+  width: 30%;
+}
+
+.category-tag {
+  color: rgb(37, 17, 13);
+  font-size: small;
+  font-weight: bold;
+}
