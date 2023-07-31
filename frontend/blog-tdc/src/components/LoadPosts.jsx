@@ -3,6 +3,7 @@ import AppContext from '../context/AppContext';
 // // import { requestAllData } from '../services/requests'; // a ser criado
 import Card from './Card';
 import mockPosts from '../mocks/mockPosts';
+import '../styles/LoadPosts.css';
 
 function LoadPosts() {
   const { dbPosts, setdbPosts } = useContext(AppContext);
@@ -35,8 +36,8 @@ function LoadPosts() {
 
 
   return (
-    <div className="container-products">
-      <h2>Últimos posts</h2>
+    <div className="main-container">
+      <h1>Últimos posts</h1>
       {
         !isLoading ? (
           <div className="posts-container">

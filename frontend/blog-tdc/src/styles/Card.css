@@ -10,11 +10,31 @@
   font-family: 'Averia Serif Libre', Cambria, serif;
   margin: 2%;
   padding: 2%;
-  width: 30%;
+  width: 80%;
+}
+
+.post-card img {
+    max-height: fit-content;
 }
 
 .category-tag {
   color: rgb(37, 17, 13);
   font-size: small;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .post-card {
+      background-color: rgb(237, 240, 212);
+      border-color: black;
+      border-radius: 10px;
+      border-width: 20px;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Averia Serif Libre', Cambria, serif;
+      margin: 2%;
+      padding: 2%;
+      width: 30%;
+    }
 }

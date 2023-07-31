@@ -1,0 +1,5 @@
+.body {
+  background-color: rgb(230, 233, 201);    
+  display: flex;
+  padding-top: 3%;
+}
