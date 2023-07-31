@@ -1,4 +1,4 @@
-const Posts = [
+const mockPosts = [
     {
       id: 1,
       title: 'Mock Post 1',
@@ -25,4 +25,4 @@ const Posts = [
     },
 ]
 
-export default Posts
+export default mockPosts
