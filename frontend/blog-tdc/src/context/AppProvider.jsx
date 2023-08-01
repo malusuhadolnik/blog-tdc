@@ -4,13 +4,20 @@ import AppContext from './AppContext';
 
 function AppProvider({ children }) {
   const [dbPosts, setdbPosts] = useState([]);
+  const [email, setEmail] = useState('');
+  const [userName, setUserName] = useState('');
   
   const values = useMemo(() => ({
     dbPosts,
-    setdbPosts
+    setdbPosts,
+    email,
+    setEmail,
+    userName,
+    setUserName,
   }), [
     dbPosts,
-    setdbPosts,
+    email,
+    userName,
   ]);
 
   return (
