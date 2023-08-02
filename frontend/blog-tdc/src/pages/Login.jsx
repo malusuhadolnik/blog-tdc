@@ -1,7 +1,8 @@
 import { useEffect, useState, useContext } from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 // import { requestLogin, setToken } from '../services/requests'; // para quando backend estiver pronto
 import AppContext from '../context/AppContext';
+import '../styles/Login.css';
 
 function Login() {
   const { email, setEmail, setUserName } = useContext(AppContext);
@@ -56,7 +57,7 @@ function Login() {
 //   };
 
 return (
-    <div>
+    <div className='login-form'>
       <form>
         <label htmlFor="email-input">
           Login
@@ -66,7 +67,7 @@ return (
             data-testid="common_login__input-email"
             value={ email }
             onChange={ handleEmailChange }
-            placeholder="email@trybeer.com.br"
+            placeholder="email@gmail.com"
           />
         </label>
         <label htmlFor="password-input">

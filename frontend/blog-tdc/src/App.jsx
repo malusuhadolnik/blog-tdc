@@ -2,6 +2,7 @@
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import PostDetails from './pages/PostDetails';
+import Login from './pages/Login';
 function App() {
 
   return (
@@ -12,7 +13,7 @@ function App() {
     <div className="pt-20">
       <Routes>
         <Route path="/" element={<Home />}/>
-        {/* <Route path="/login" element={<Login />}/> */}
+        <Route path="/login" element={<Login />}/>
         {/* <Route path="/create" element={<Create />}/> */}
         {/* <Route path="/organizacao-pessoal" element={<Organization />}/> */}
         {/* <Route path="/criatividade" element={<Creativity />}/> */}
