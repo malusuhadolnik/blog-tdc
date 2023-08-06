@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
 
 .login-form {
-  background-color:rgb(230, 233, 201);;
+  background-color:rgb(230, 233, 201);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   font-family: 'Averia Serif Libre', Cambria, serif;
+  margin-left: 30%;
+  margin-top: 10%;
   padding: 2%;
   width: 30%;
 }
