@@ -64,7 +64,6 @@ return (
           <input
             name="email"
             type="email"
-            data-testid="common_login__input-email"
             value={ email }
             onChange={ handleEmailChange }
             placeholder="email@gmail.com"
