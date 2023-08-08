@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
+
+.footer-container {
+  background-color:rgb(230, 233, 201);
+  display: flex;
+  font-family: 'Averia Serif Libre', Cambria, serif;
+  justify-content: space-around;
+  padding: 1%;
+}

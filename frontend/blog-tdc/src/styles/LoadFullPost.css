@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
+
+.main-details-container {
+  background-color: rgb(237, 240, 212);
+  border-radius: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 5%;
+}
+
+.main-details-container img {
+  max-width: 60%;
+}
+
+.author {
+  font-style: italic;
+}
