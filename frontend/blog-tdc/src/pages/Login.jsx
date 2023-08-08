@@ -82,7 +82,6 @@ return (
         </label>
         <button
           type="button"
-          data-testid="common_login__button-login"
           disabled={ !loginValidation }
         //   onClick={ (event) => login(event) }
         >

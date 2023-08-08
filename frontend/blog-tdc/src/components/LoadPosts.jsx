@@ -1,4 +1,5 @@
 import { useEffect, useState, useContext } from 'react';
+import { useLocation } from 'react-router-dom';
 import AppContext from '../context/AppContext';
 // // import { requestAllData } from '../services/requests'; // a ser criado
 import Card from './Card';
@@ -8,6 +9,7 @@ import '../styles/LoadPosts.css';
 function LoadPosts() {
   const { dbPosts, setdbPosts } = useContext(AppContext);
   const [isLoading, setIsLoading] = useState(true);
+  const { pathname } = useLocation();
 
 // Para usar quando o back-end estiver pronto
 //   const postsList = async () => {
@@ -28,8 +30,25 @@ function LoadPosts() {
   
 // Teste com dados mockados!
   useEffect(() => {
+    let postData = mockPosts;
+    switch (pathname) {
+      case '/organizacao-pessoal':
+        postData = [mockPosts[0]];
+        break;
+      case '/criatividade':
+        postData = [mockPosts[1]];
+        break;
+      case '/papelaria':
+        postData = [mockPosts[2]];
+        break;
+      default:
+        postData = mockPosts;
+    }
+ 
     if (isLoading === true) {
-      setdbPosts(mockPosts);
+      console.log(postData)
+      console.log(pathname);
+      setdbPosts(postData);
       setIsLoading(false);
     }
   }, [])

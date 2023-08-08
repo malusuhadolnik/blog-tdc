@@ -6,10 +6,9 @@
   display: flex;
   flex-direction: column;
   font-family: 'Averia Serif Libre', Cambria, serif;
-  margin-left: 25%;
+  margin-left: 2%;
   margin-top: 2%;
   padding: 2%;
-  width: 50%;
 }
 
 .label-type1 {
@@ -21,4 +20,19 @@
   border-radius: 10px;
   margin-bottom: 2%;
   padding: 2%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .create-post-form {
+    background-color:rgb(230, 233, 201);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Averia Serif Libre', Cambria, serif;
+    margin-left: 25%;
+    margin-top: 2%;
+    padding: 2%;
+    width: 50%;
+  }
 }

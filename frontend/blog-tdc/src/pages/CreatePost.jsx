@@ -17,7 +17,7 @@ function CreatePost() {
   const submitPost = () => {
     console.log('funcionando');
 
-    //Implementar fetch ao backend para fazer o POST
+    // Implementar fetch ao backend para fazer o POST
   }
 
   useEffect(() => {
