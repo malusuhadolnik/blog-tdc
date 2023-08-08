@@ -15,6 +15,7 @@ function LoadPosts() {
 //   const postsList = async () => {
 //     try {
   // IMPORTANTE: CRIAR LÒGICA PARA LIMITAR O NÙMERO DE POSTS RECUPERADOS LÀ NO BACKEND
+  // Fazer chamada para o endpoint dependente do pathname
 //       const data = await requestAllData('/posts'); // endpoint para o fetch dos posts no db, a ser criado
 //       setdbPosts(data);
 //       setIsLoading(false);
