@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import LoadPosts from "../components/LoadPosts";
+import Footer from "../components/Footer";
 import '../styles/Home.css';
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
           <About />
           <LoadPosts />
         </div>
+        <Footer />
       </main>
     );
 }

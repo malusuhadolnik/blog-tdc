@@ -1,6 +1,8 @@
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import LoadPosts from "../components/LoadPosts";
+import Footer from "../components/Footer";
+import './../styles/PostsByCategory.css'
 
 function Creativity() {
   return (
@@ -11,6 +13,7 @@ function Creativity() {
           <h1>Criatividade</h1>
           <LoadPosts />
         </div>
+      <Footer />
     </main>
   );
 }
