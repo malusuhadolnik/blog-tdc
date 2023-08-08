@@ -18,7 +18,7 @@ function Card(props) {
         alt={ title }
       />
       <h3>{ title }</h3>
-      <p className='category-tag'>{ mainCategory }</p>
+      <p className='category-tag'>Em: { mainCategory }</p>
       <p>{ summary }</p>
       <div className='read-more-container'>
             <Link

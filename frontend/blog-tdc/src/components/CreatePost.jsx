@@ -1,6 +1,6 @@
 import 'react-quill/dist/quill.snow.css';
 import { useState, useEffect} from "react";
-import TextEditor from "../components/TextEditor";
+import TextEditor from "./TextEditor";
 import '../styles/CreatePost.css';
 
 function CreatePost() {
@@ -12,7 +12,7 @@ function CreatePost() {
     const [file, setFile] = useState('');
     const [completeInfo, setCompleteInfo] = useState(false);
 
-  const categoryOptions = ["organization", "creativity", "stationary"];
+  const categoryOptions = ["Organização", "Criatividade", "Papelaria"];
 
   const submitPost = () => {
     console.log('funcionando');

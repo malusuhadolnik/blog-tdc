@@ -48,7 +48,7 @@ function Login() {
 //         const { userName } = data;
 //         setUserName(userName);
 
-//         return history.push('/create');
+//         return history.push('/admin');
 //       }
 //     } catch (error) {
 //       setFailedTryLogin(true);
