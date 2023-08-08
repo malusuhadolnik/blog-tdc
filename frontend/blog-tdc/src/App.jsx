@@ -7,8 +7,8 @@ import CreatePost from './pages/CreatePost';
 import Organization from './pages/Organization';
 import Creativity from './pages/Creativity';
 import Stationary from './pages/Stationary';
-function App() {
 
+function App() {
   return (
     // <div className="App">
     //   Vite APP
