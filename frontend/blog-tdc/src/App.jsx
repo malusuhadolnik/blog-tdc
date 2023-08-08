@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import CreatePost from './pages/CreatePost';
 import Organization from './pages/Organization';
 import Creativity from './pages/Creativity';
+import Stationary from './pages/Stationary';
 function App() {
 
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/create" element={<CreatePost />}/>
         <Route path="/organizacao-pessoal" element={<Organization />}/>
         <Route path="/criatividade" element={<Creativity />}/>
-        {/* <Route path="/papelaria" element={<Stationary />}/> */}
+        <Route path="/papelaria" element={<Stationary />}/>
         <Route path="/posts/:id" element={ <PostDetails/> } />
       </Routes>
     </div>
