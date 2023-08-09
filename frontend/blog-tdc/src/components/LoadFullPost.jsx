@@ -30,11 +30,12 @@ function LoadFullPost() {
           <div className="details-container">
             <p className='category-tag'>Categoria: { postDetails.mainCategory }</p>
             <h2>{ postDetails.title }</h2>
+            <p>Publicado em { postDetails.createdAt }</p>
+            <p className='author'>Por { postDetails.author }</p>
             <img 
               src= { postDetails.mainImage }
               alt={ postDetails.title }
             />
-            <p className='author'>Por { postDetails.author }</p>
             <h4>{ postDetails.summary }</h4>
             <p className='text'>{ postDetails.text }</p>
           </div>

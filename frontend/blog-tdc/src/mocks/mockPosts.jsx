@@ -1,6 +1,7 @@
 const mockPosts = [
     {
       id: 1,
+      createdAt: 'YYYY-MM-ddTHH:mm:ss',
       title: 'Mock Post 1',
       author: 'Maria Luíza S. Suhadolnik',
       mainCategory: 'Organização',
@@ -10,6 +11,7 @@ const mockPosts = [
     },
     {
       id: 2,
+      createdAt: 'YYYY-MM-ddTHH:mm:ss',
       title: 'Mock Post 2',
       author: 'Maria Luíza S. Suhadolnik',
       mainCategory: 'Criatividade',
@@ -19,6 +21,7 @@ const mockPosts = [
     },
     {
       id: 3,
+      createdAt: 'YYYY-MM-ddTHH:mm:ss',
       title: 'Mock Post 3',
       author: 'Maria Luíza S. Suhadolnik',
       mainCategory: 'Papelaria',

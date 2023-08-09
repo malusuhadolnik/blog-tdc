@@ -47,8 +47,6 @@ function LoadPosts() {
     }
  
     if (isLoading === true) {
-      console.log(postData)
-      console.log(pathname);
       setdbPosts(postData);
       setIsLoading(false);
     }
@@ -65,6 +63,7 @@ function LoadPosts() {
               key={ post.id }
               title={ post.title }
               mainCategory={ post.mainCategory }
+              createdAt={ post.createdAt }
               summary={ post.summary }
               mainImage={ post.mainImage }
               id={ post.id }
