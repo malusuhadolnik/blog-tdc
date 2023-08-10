@@ -5,7 +5,7 @@ import AppContext from '../context/AppContext';
 import '../styles/Login.css';
 
 function Login() {
-  const { email, setEmail, setUserName } = useContext(AppContext);
+  const { email, setEmail, } = useContext(AppContext); // incluir depois: setUserName, token, setToken 
   const [password, setPassword] = useState('');
   const [loginValidation, setloginValidation] = useState(false);
   const [failedTryLogin, setFailedTryLogin] = useState(false);
@@ -43,6 +43,7 @@ function Login() {
 //       const data = await requestLogin('/login', { email, password }); 
 //       const token = data.key;
 //       setToken(token);
+//       localStorage.setItem('token', token);
 
 //       if (token) {
 //         const { userName } = data;

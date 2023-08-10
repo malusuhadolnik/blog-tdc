@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { useParams } from "react-router-dom";
-// import AppContext from '../context/AppContext';
+import AppContext from '../context/AppContext';
 import mockPosts from '../mocks/mockPosts';
+import AdminButtons from './AdminButtons';
 import '../styles/LoadFullPost.css';
 
 function LoadFullPost() {
-//   const { postDetails, setPostDetails } = useContext(AppContext);
+  const { token } = useContext(AppContext); // postDetails, setPostDetails 
   const [postDetails, setPostDetails] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
-
+  
   // Para quando o back-end estiver completo:
   // Fazer o fetch com a id em questão para o endpoint que recupera post por id no banco de dados
   // Guardar o resultado do fetch em postDetails
@@ -20,6 +21,7 @@ function LoadFullPost() {
       const targetIndex = id - 1;
       setPostDetails(mockPosts[targetIndex]);
       setIsLoading(false);
+      console.log(token);
     }
   }, [])
 
@@ -38,6 +40,7 @@ function LoadFullPost() {
             />
             <h4>{ postDetails.summary }</h4>
             <p className='text'>{ postDetails.text }</p>
+            <AdminButtons token={ token } />
           </div>
         ) : (
           <h1>Loading...</h1>
