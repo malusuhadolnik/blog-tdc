@@ -9,6 +9,7 @@ function Card(props) {
     summary,
     mainImage,
     id,
+    createdAt,
   } = props;
 
   return (
@@ -19,12 +20,13 @@ function Card(props) {
       />
       <h3>{ title }</h3>
       <p className='category-tag'>{ mainCategory }</p>
+      <p className='date-time'>Publicado em { createdAt }</p>
       <p>{ summary }</p>
       <div className='read-more-container'>
             <Link
             to={ `/posts/${id}` }
             >
-              Leia mais
+            Leia mais
            </Link>  
           </div>
     </div>
@@ -36,7 +38,8 @@ Card.propTypes = {
   mainCategory: PropTypes.string,
   summary: PropTypes.string,
   mainImage: PropTypes.string,
-  id: PropTypes.number, 
+  id: PropTypes.number,
+  createdAt: PropTypes.string,
 }
 
 export default Card;

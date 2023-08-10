@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
+
+.admin-panel-container  {
+  background-color: rgb(202, 192, 202);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Averia Serif Libre', Cambria, serif;
+  padding: 2%;
+  width: 15%;
+  margin: 2%
+}
+
+.admin-panel-container img {
+  margin-bottom: 0px;
+}
+
+.admin-panel-container a {
+  text-decoration: none;
+}
+
+.serachInput {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.serachInput input {
+  width: 80%;
+}

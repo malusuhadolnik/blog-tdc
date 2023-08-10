@@ -9,8 +9,8 @@ function About() {
     return (
       <div className='about-container'>
         <div className='photo-container'>          
-        <h3>Sobre</h3>
-        <img 
+          <h3>Sobre</h3>
+          <img 
             src={ notebooks }
             alt='Foto de uma pilha de cadernos feitos à mão'
           />
